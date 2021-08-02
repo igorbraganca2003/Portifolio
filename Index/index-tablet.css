@@ -1,0 +1,559 @@
+@font-face {
+    src: url(./fontes/BeVietnam-Bold.ttf);
+    font-family: 'Vietnam-Bold';
+}
+
+@font-face {
+    src: url(./fontes/BeVietnam-BoldItalic.ttf);
+    font-family: 'Vietnam-BoldItalic';
+}
+
+@font-face {
+    src: url(./fontes/BeVietnam-ExtraBold.ttf);
+    font-family: 'Vietnam-ExtraBold';
+}
+
+@font-face {
+    src: url(./fontes/BeVietnam-ExtraBoldItalic.ttf);
+    font-family: 'Vietnam-ExtraBoldItalic';
+}
+
+@font-face {
+    src: url(./fontes/BeVietnam-Italic.ttf);
+    font-family: 'Vietnam-Italic';
+}
+
+@font-face {
+    src: url(./fontes/BeVietnam-Light.ttf);
+    font-family: 'Vietnam-Light';
+}
+
+@font-face {
+    src: url(./fontes/BeVietnam-LightItalic.ttf);
+    font-family: 'Vietnam-LightItalic';
+}
+
+@font-face {
+    src: url(./fontes/BeVietnam-Medium.ttf);
+    font-family: 'Vietnam-Medium';
+}
+
+@font-face {
+    src: url(./fontes/BeVietnam-MediumItalic.ttf);
+    font-family: 'Vietnam-MediumItalic';
+}
+
+@font-face {
+    src: url(./fontes/BeVietnam-Regular.ttf);
+    font-family: 'Vietnam-Regular';
+}
+
+@font-face {
+    src: url(./fontes/BeVietnam-SemiBold.ttf);
+    font-family: 'Vietnam-SemiBold';
+}
+
+@font-face {
+    src: url(./fontes/BeVietnam-SemiBoldItalic.ttf);
+    font-family: 'Vietnam-SemiBoldItalic';
+}
+
+@font-face {
+    src: url(./fontes/BeVietnam-Thin.ttf);
+    font-family: 'Vietnam-Thin';
+}
+
+@font-face {
+    src: url(./fontes/BeVietnam-ThinItalic.ttf);
+    font-family: 'Vietnam-ThinItalic';
+}
+
+::-webkit-scrollbar{
+    width: 5px;
+}
+
+::-webkit-scrollbar-track{
+    background-color:#4a4d53;
+}
+
+::-webkit-scrollbar-thumb{
+    width: 100%;
+    background-color: #f57d1b;
+    border-radius: 15px;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
+body {
+    background-color: #393947;
+    margin: 0;
+}
+
+@media screen and (min-width:700px) and (max-width:1024px) {
+    /* sesão 1 */
+    .sesao-1 {
+        height: 350px;
+    }
+    
+    /* principal esquerdo */
+    .principal-esquerdo {
+        background-image: url(./img/foto-principal.jpg);
+        background-size: 85%;
+        background-position: right;
+        background-repeat: no-repeat;
+        float: left;
+        height: 350px;
+        width: 55%;
+    }
+    .principal-esquerdo h1 {
+        padding: 90px 0 0 50px;
+        margin: 0;
+        font-family: 'Vietnam-BoldItalic';
+        color: white;
+        font-size: 2rem;
+    }
+    #socials-icons {
+        padding: 20px 0 0 50px;
+        margin: 0;
+    }
+    #socials-icons i {
+        color: white;
+        font-size: 1rem;
+        padding: 10px ;
+    }
+
+    /* principal direito */
+    .principal-direito {
+        margin: 0;
+        padding: 40px 40px 0 0;
+    }
+    .nav-bar {
+        font-family: 'Vietnam-SemiBold';
+        text-transform: uppercase;
+        width: 100%;
+    }
+    .nav-bar * {
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        -webkit-transition: all 0.35s ease;
+        transition: all 0.35s ease;
+    }
+    .nav-bar li {
+        display: inline-block;
+        list-style: outside none none;
+        margin-right: 20px;
+        padding: 0;
+    }
+    .nav-bar a {
+        padding: 0.4em 0.7em;
+        display: block;
+        color: rgba(255, 255, 255, 0.5);
+        position: relative;
+        text-decoration: none;
+        font-size: 0.7rem;
+    }
+    .nav-bar a:before, .nav-bar a:after {
+        height: 10px;
+        width: 10px;
+        position: absolute;
+        content: '';
+        -webkit-transition: all 0.35s ease;
+        transition: all 0.35s ease;
+        opacity: 0;
+    }
+    .nav-bar a:before {
+        left: 0;
+        top: 0;
+        border-left: 3px solid #EA7718;
+        border-top: 3px solid #EA7718;
+        -webkit-transform: translate(100%, 50%);
+        transform: translate(100%, 50%);
+    }
+    .nav-bar a:after {
+        right: 0;
+        bottom: 0;
+        border-right: 3px solid #EA7718;
+        border-bottom: 3px solid #EA7718;
+        -webkit-transform: translate(-100%, -50%);
+        transform: translate(-100%, -50%);
+    }
+    .nav-bar a:hover, .nav-bar .current a {
+        color: #ffffff;
+    }
+    .nav-bar a:hover:before, .nav-bar .current a:before, .nav-bar a:hover:after, .nav-bar .current a:after {
+        -webkit-transform: translate(0%, 0%);
+        transform: translate(0%, 0%);
+        opacity: 1;
+    }
+    .principal-direito h1 {
+        color: #888888;
+        font-family: 'Vietnam-Medium';
+        font-size: 0.8rem;
+        margin: 0;
+        padding: 40px 0 0 0;
+    }
+    .principal-direito h2 {
+        color: white;
+        font-family: 'Vietnam-SemiBold';
+        margin: 0;
+        padding-top: 5px;
+        font-size: 1.2rem;
+    }
+    .principal-direito p {
+        color: white;
+        font-size: 0.6rem;
+        font-family: 'Vietnam-Thin';
+        padding: 0 40px 0 0;
+    }
+    .principal-direito button {
+        border: none;
+        color: #EA7718;
+        background-color: transparent;
+        padding: 0;
+        font-size: 0.7rem;
+    }
+
+    /* sesão-2 */
+    .sesao-2 {
+        background-color: #292933;
+        overflow: auto;
+        height: 370px;
+    }
+    .texto h1 {
+        color: white;
+        font-size: 2rem;
+        font-family: 'Vietnam-ExtraBold';
+    }
+
+    /* segundo-esquerdo */
+    .segundo-esquerdo {
+        width: 45%;
+        height: 90%;
+        margin-right: 0;
+        float: left;
+        padding-bottom: 10px;
+    }
+    .segundo-esquerdo h1 {
+        margin: 0;
+        color: #888888;
+        font-family: 'Vietnam-Medium';
+        font-size: 0.8rem;
+        padding: 12% 0 0 23%;
+    }
+    .segundo-esquerdo h2 {
+        color: white;
+        font-family: 'Vietnam-SemiBold';
+        margin: 0;
+        font-size: 1rem;
+        padding: 0 0 0 23%;
+    }
+    .segundo-esquerdo .info-esquerdo {
+        font-size: 1.3rem;
+        padding: 5% 0 0 23%;
+    }
+    .segundo-esquerdo .info-esquerdo i {
+        color: #EA7718;
+        margin: 0;
+        padding-right: 16px;
+        font-size: 1rem;
+    }
+    .segundo-esquerdo .info-esquerdo p {
+        margin: 0;
+        height: 100%;
+        font-family: 'Vietnam-Thin';
+        color: white;
+        font-size: 0.6rem;
+    }
+
+    /* segundo-direito */
+    .segundo-direito {
+        float: right;
+        width: 50%;
+        margin: 0;
+        padding-bottom: 70px;
+    }
+    .segundo-direito h1 {
+        margin: 0;
+        color: #888888;
+        font-family: 'Vietnam-Medium';
+        font-size: 0.8rem;
+        padding: 12% 0 0 0;
+    }
+    .segundo-direito h2 {
+        color: white;
+        font-family: 'Vietnam-SemiBold';
+        margin: 0;
+        font-size: 1rem;
+    }
+    .ingles h3 {
+        color: white;
+        font-family: 'Vietnam-SemiBold';
+        margin: 0;
+        font-size: 1rem;
+        padding: 40px 0 10px 0;
+    }
+    .ingles-barra {
+        height: 6px;
+        width: 70%;
+        background-color: #EA7718;
+        border-radius: 5px;
+    }
+    .ingles-barra p {
+        margin-right: 10px;
+        float: left;
+    }
+    .espanhol h3 {
+        color: white;
+        font-family: 'Vietnam-SemiBold';
+        margin: 0;
+        font-size: 1rem;
+        padding: 30px 0 10px 0;
+    }
+    .espanhol-barra {
+        height: 6px;
+        width: 40%;
+        background-color: #EA7718;
+        border-radius: 5px;
+    }
+
+    /* habilidades */
+    .texto h1 {
+        color: white;
+        font-size: 1rem;
+    }
+
+    /* Blocos */
+    .blocos {
+        background: linear-gradient(0deg, #393947 50%, #292933 50%);
+        width: 100%;
+        overflow: auto;
+    }
+    .block {
+        margin: 0 0 0 18%;
+    }
+    .block h2 {
+        color: white;
+        font-family: 'Vietnam-Thin';
+        font-size: 1rem;
+        text-align: center;
+        padding: 0 5%;
+    }
+    .block i {
+        color: white;
+        text-align: center;
+        margin-left: calc(50% - 0.9rem);
+        font-size: 1.2rem;
+        padding-top: 20%;
+    }
+    .blocos-1 {
+        width: 25%;
+        height: 150px;
+        background-color: #EA7718;
+        margin: 0 2% 0 0;
+        float: left;
+    }
+    .blocos-2 {
+        width: 25%;
+        height: 150px;
+        background-color: #4a4d53;
+        margin: 0 2% 0 0;
+        float: left;
+    }
+    .blocos-3 {
+        width: 25%;
+        height: 150px;
+        background-color: #4a4d53;
+        margin: 0 0 0 0;
+        float: left;
+    }
+
+    /* Meus projetos */
+    .meus-projetos {
+        margin: 6% 8% 8% 8%;
+        padding-top: 5%;
+        overflow: auto;
+    }
+    .projetos-txt {
+        width: 50%;
+        margin-right: 0;
+        float: left;
+    }
+    .projetos-txt h1 {
+        color: #bdb1b1;
+        font-family: 'Vietnam-Medium';
+        font-size: 0.8rem;
+        margin: 0;
+        padding: 0;
+    }
+    .projetos-txt h2 {
+        color: white;
+        font-family: 'Vietnam-SemiBold';
+        margin: 0;
+        padding-top: 5px;
+        font-size: 1rem;
+    }
+    .projetos-txt p {
+        color: white;
+        font-size: 0.8rem;
+        font-family: 'Vietnam-Thin';
+        padding: 10px 100px 10px 0;
+    }
+    .projetos-txt button {
+        border: none;
+        color: #f57d1b;
+        background-color: transparent;
+        font-size: 0.7rem;
+        padding: 0;
+    }
+    .projeto-1 {
+        float: right;
+        width: 50%;
+        margin: 0;
+        padding-top: 0px;
+    }
+    .projeto-1 div {
+        background-image: url(./img/meus\ projetos\ 1.jpg);
+        border-radius: 7px;
+        background-size: cover;
+        height: 300px;
+        width: 265px;
+        margin:0 5%;
+    }
+    .projeto-2 {
+        float: left;
+        width: 50%;
+        margin: 0;
+        padding-top: 50px;
+    }
+    .projeto-2 div {
+        background-image: url(./img/meus\ projetos\ 2.jpg);
+        border-radius: 7px;
+        background-size: cover;
+        height: 300px;
+        width: 265px;
+        margin: 0 2% 0 0;
+    }
+    .projeto-3 {
+        float: right;
+        width: 50%;
+        margin: 0;
+        padding-top: 70px;
+    }
+    .projeto-3 div {
+        background-image: url(./img/meus\ projetos\ 3.jpg);
+        border-radius: 7px;
+        background-size: cover;
+        height: 300px;
+        width: 265px;
+        margin:0 5%;
+    }
+
+    /* Sou-digno */
+    .digno{
+        background-color: #292933;
+        margin: 0;
+        padding: 0;overflow: auto;
+    }
+    .digno-esquerdo{
+        width: 300px;
+        height: 300px;
+        margin: 4% 0% 0% 4%;
+        background-image: url(./img/Thor\ hammer.jpg);
+        background-size: cover;
+        float: left;
+    }
+    .contatos{
+        width: 50%;
+        height: 370px;
+        margin-right: 0;
+        float: right;
+    }
+    .info-contatos{
+        font-size: 1.3rem;
+        padding: 5% 20% 0 0;
+        float: right;
+    }
+    .contatos h1 {
+        margin-top: 0;
+        color: #888888;
+        font-family: 'Vietnam-Medium';
+        font-size: 0.8rem;
+        padding: 14% 0 0 62%;
+    }
+    .contatos h2 {
+        color: white;
+        font-family: 'Vietnam-SemiBold';
+        margin: 0;
+        font-size: 1.2rem;
+        padding: 0 20% 0 0;
+        float: right;
+    }
+    .contatos h3{
+        color: rgb(228, 228, 228);
+        font-family: 'Vietnam-Thin';
+        margin: 0;
+        font-size: 0.8rem;
+        padding: 4% 20% 0 0;
+        float: right;
+    }
+    .info-contatos i {
+        color: #EA7718;
+        margin: 0;
+        padding: 0 0 0 16px;
+        font-size: 1rem;
+    }
+    .info-contatos p {
+        margin: 0;
+        height: 100%;
+        font-family: 'Vietnam-Thin';
+        padding-top: 10%;
+        color: white;
+        font-size: 0.8rem;
+        float: right;
+    }
+
+    /* Contatos mobile */
+    .info-contatos-mobile{
+        display: none;
+    }
+
+    /* Footer */
+    .footer{
+        height: 300px;
+        width: 100%;
+    }
+    .footer section{
+        margin: 3% auto;
+        width: 25%;
+    }
+    .footer .ib{
+        padding-top: 18%;
+    }
+    .footer .ib h1{
+        color:#EA7718;
+        font-family: 'Vietnam-ExtraBold';
+        font-size: 3rem;
+        margin: 0;
+        text-align:center;
+    }
+    .footer .ib p{
+        color:white;
+        font-family: 'Vietnam-LightItalic';
+        font-size: 1rem;
+        text-align:center;
+    }
+    .footer .redes-icones {
+        text-align: center;
+        padding-top: 50px;
+        padding-bottom: 100px;
+    }
+    .footer .redes-icones i{
+        color:white;
+        font-size: 1.3rem;
+        text-align:center;
+        padding: 0 20px;
+    }
+    
+}
