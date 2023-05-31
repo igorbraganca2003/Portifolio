@@ -18,6 +18,3 @@ Photos/Fotos (Mobile version):
 
 ![foto site 4](https://user-images.githubusercontent.com/61918994/127942899-1d3d5ddf-8e00-437b-9d9b-e656bc78bb29.jpg)
 
-🇧🇷 Este é meu projeto, obrigado, siga-me para mais como este!
-
-🇺🇸 This is my project, thank you, follow-me for more like this!
